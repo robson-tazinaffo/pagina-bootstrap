@@ -28,6 +28,10 @@ body {
   color: white;
 }
 
+.parceiros img {
+  width: 100%;
+}
+
 .servicos {
   background-color: #9acae0;
   max-height: 100%;
@@ -53,9 +57,31 @@ body {
 }
 
 .bg-footer {
-  /* padding-top: 15px; */
+  padding-top: 25px;
   background-color: #28a745;
   /* max-height: 50px; */
-  /* height: 50px; */
+  height: 50px;
   color: antiquewhite;
+}
+
+/* ================  backToTopButton ============== */
+
+#backToTopButton {
+  position: fixed;
+  bottom: 3rem;
+  right: 1.5rem;
+
+  /* opacity: 0;
+  visibility: hidden; */
+
+  transform: translateY(100%);
+  transition: 200ms;
+
+  fill: #2743e4;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
